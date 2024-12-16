@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>C 语言函数 — 定义与调用</title>
+      <link href="//c-language-functions-definition-call/"/>
+      <url>//c-language-functions-definition-call/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言函数-—-定义与调用"><a href="#C-语言函数-—-定义与调用" class="headerlink" title="C 语言函数 — 定义与调用"></a>C 语言函数 — 定义与调用</h1><p>函数是 C 语言中非常重要的一个概念，它将代码分割成可以重复使用的模块。通过定义和调用函数，可以使程序更加模块化，代码更加简洁。</p><h2 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h2><p>C 语言中的函数由函数名、返回类型、参数列表和函数体组成。函数定义的基本格式如下：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">return_type <span class="title function_">function_name</span><span class="params">(parameters)</span> &#123;</span><br><span class="line">    <span class="comment">// body of the function</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> result = add(<span class="number">5</span>, <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Result: %d\n&quot;</span>, result);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>函数的调用<br>在程序中，调用函数的语法很简单，只需要函数名和适当的参数。</p><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">greet</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, World!\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    greet();  <span class="comment">// Function call</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>传递参数<br>C 语言支持传值和传址两种参数传递方式。传值是将参数的副本传递给函数，传址则是将参数的地址传递给函数。</p><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">updateValue</span><span class="params">(<span class="type">int</span> *x)</span> &#123;</span><br><span class="line">    *x = <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> num = <span class="number">5</span>;</span><br><span class="line">    updateValue(&amp;num);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Updated value: %d\n&quot;</span>, num);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>#include &lt;stdio.h&gt;</p><p>void updateValue(int *x) {<br>    *x &#x3D; 10;<br>}</p><p>int main() {<br>    int num &#x3D; 5;<br>    updateValue(&amp;num);<br>    printf(“Updated value: %d\n”, num);<br>    return 0;<br>}</p><pre><code>函数是模块化编程的基础，理解函数的定义与调用能让你的程序更加清晰和高效。</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C 语言循环结构 — for 循环与 while 循环</title>
+      <link href="//c-language-loops-for-while/"/>
+      <url>//c-language-loops-for-while/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言循环结构-—-for-循环与-while-循环"><a href="#C-语言循环结构-—-for-循环与-while-循环" class="headerlink" title="C 语言循环结构 — for 循环与 while 循环"></a>C 语言循环结构 — for 循环与 while 循环</h1><p>循环是程序控制结构中非常重要的一部分，C 语言提供了多种类型的循环语句，其中最常用的是 <code>for</code> 循环和 <code>while</code> 循环。</p><h2 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h2><p><code>for</code> 循环通常用于已知执行次数的情况下，结构如下：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (initialization; condition; increment) &#123;</span><br><span class="line">    <span class="comment">// code to be executed</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Iteration %d\n&quot;</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>while 循环<br>while 循环用于在条件为真时重复执行代码块。结构如下：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (condition) &#123;</span><br><span class="line">    <span class="comment">// code to be executed</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (i &lt;= <span class="number">5</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Iteration %d\n&quot;</span>, i);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>do-while 循环<br>do-while 循环会先执行一次循环体，然后再判断条件是否满足。</p><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Iteration %d\n&quot;</span>, i);</span><br><span class="line">        i++;</span><br><span class="line">    &#125; <span class="keyword">while</span> (i &lt;= <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>循环结构是实现重复任务的利器，合理使用循环可以大大简化程序逻辑。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C 语言控制结构 — 条件语句</title>
+      <link href="//c-language-control-structures-conditional-statements/"/>
+      <url>//c-language-control-structures-conditional-statements/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言控制结构-—-条件语句"><a href="#C-语言控制结构-—-条件语句" class="headerlink" title="C 语言控制结构 — 条件语句"></a>C 语言控制结构 — 条件语句</h1><p>条件语句是 C 语言中用于控制程序流程的结构之一。在编程中，常常需要根据不同的条件执行不同的代码块。C 语言提供了 <code>if</code>、<code>else</code> 和 <code>switch</code> 语句来实现条件判断。</p><h2 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a>if 语句</h2><p><code>if</code> 语句用于根据条件的真假决定是否执行某段代码。</p><h3 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> num = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Number is positive.\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>if-else 语句<br>当条件不满足时，可以使用 else 分支来执行另一段代码。</p><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> num = <span class="number">-5</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Number is positive.\n&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Number is non-positive.\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>switch 语句<br>switch 语句用于多个条件的判断，它比多重 if-else 语句更简洁明了。</p><p>示例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> day = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span>(day) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;Monday\n&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;Tuesday\n&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;Wednesday\n&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;Invalid day\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>条件语句是控制程序流程的重要工具，掌握它们对于编写有逻辑的程序至关重要。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C 语言基础 — 变量与数据类型</title>
+      <link href="//c-language-basic-variables-data-types/"/>
+      <url>//c-language-basic-variables-data-types/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言基础-—-变量与数据类型"><a href="#C-语言基础-—-变量与数据类型" class="headerlink" title="C 语言基础 — 变量与数据类型"></a>C 语言基础 — 变量与数据类型</h1><p>C 语言是一门结构化的编程语言，它为开发各种应用程序提供了强大的功能。在学习 C 语言的过程中，首先需要掌握的是基本的概念，包括变量和数据类型。</p><h2 id="变量的声明与初始化"><a href="#变量的声明与初始化" class="headerlink" title="变量的声明与初始化"></a>变量的声明与初始化</h2><p>在 C 语言中，变量是存储数据的容器。在使用变量之前，必须先声明它们。声明语法如下：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">data_type variable_name;</span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> age = <span class="number">25</span>;</span><br><span class="line">    <span class="type">float</span> height = <span class="number">5.9</span>;</span><br><span class="line">    <span class="type">char</span> grade = <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Age: %d\n&quot;</span>, age);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Height: %.1f\n&quot;</span>, height);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Grade: %c\n&quot;</span>, grade);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>主要数据类型<br>C 语言提供了多种数据类型，最常用的有：</p><p>int: 用于存储整数<br>float: 用于存储浮点数<br>char: 用于存储单个字符</p><p>数据类型的大小<br>不同的数据类型占用不同的内存空间。通过 sizeof() 函数可以查看变量所占的内存大小。</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of int: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of float: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">float</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of char: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">char</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>掌握变量和数据类型是 C 语言编程的第一步，理解这些基本概念将帮助你更高效地编写代码。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/12/10/hello-world/"/>
+      <url>/2024/12/10/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
